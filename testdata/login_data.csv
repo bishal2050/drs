@@ -1,0 +1,4 @@
+username,password,result_type,expected_result
+testmorning,test123,welcome,Welcome testmorning
+testmorning,wrongpassword,alert,Wrong password.
+testmorning,newpassword,alert,Wrong password.
