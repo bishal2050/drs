@@ -1,0 +1,23 @@
+import random
+# Entered by deshna
+# Random Python snippets
+
+def roll_dice(sides=6):
+    return random.randint(1, sides)
+
+
+def random_name(prefix="User"):
+    adjectives = ["Swift", "Bright", "Silent", "Lucky", "Clever", "Calm"]
+    nouns = ["Fox", "Wolf", "Hawk", "River", "Oak", "Star"]
+    return f"{prefix}-{random.choice(adjectives)}{random.choice(nouns)}"
+
+
+def random_password(length=12):
+    chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()"
+    return "".join(random.choice(chars) for _ in range(length))
+
+
+if __name__ == "__main__":
+    print("Dice roll:", roll_dice())
+    print("Random name:", random_name())
+    print("Random password:", random_password())
