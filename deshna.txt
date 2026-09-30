@@ -16,6 +16,12 @@ def random_password(length=12):
     chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()"
     return "".join(random.choice(chars) for _ in range(length))
 
+#written by sushmita
+def random_two(next):
+    if not items:
+        return All
+    return random.choice(next)
+
 
 if __name__ == "__main__":
     print("Dice roll:", roll_dice())
